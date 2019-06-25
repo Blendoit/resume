@@ -1,39 +1,56 @@
 % Included packages
 % Document layout
-\documentclass[12pt]{report}
+\documentclass[10pt]{report}
 \usepackage[]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{setspace}
 \usepackage{enumitem}
+\usepackage{titlesec}
 \usepackage{booktabs}
-% Font
-% \usepackage{libertine}
-% \renewcommand*\familydefault{\sfdefault}
-\usepackage[T1]{fontenc}
-
 \usepackage{lipsum}
+\usepackage{libertine}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
 
 
 % Global formatting
 \setlist{noitemsep}
-% \setlength{\columnsep}{0.6in}
+\newgeometry{margin=0.5in}
+\newcommand{\tabitem}{\textbullet~~}
+% \titlespacing{<command>}{<left>}{<before-sep>}{<after-sep>}[<right>]
+\titlespacing{\section}{0pt}{4pt}{4pt}
 
-% Document start
+
 \begin{document}
 
+\begin{center}
+    \huge \textsc{Marius Peter} \\
+    \Large Sales | Engineering | Design
+\end{center}
 
-\section*{Experiences}
 \begin{table}[H]
-    \begin{tabular}{lcl}
-        \toprule
-        2018 & Cosmo Tech & Assistant Business Analyst                                       \\
-             &            & Secured initial funding for an industrial process modelling tool \\
-        \midrule
-        2015 & CERN       & Assistant Electronic Engineer                                    \\
-             &            & Secured initial funding for an industrial process modelling tool \\
-        \bottomrule
+    \section*{Experiences}
+    \toprule
+    \begin{tabular}{ll}
+        2017       & \textemdash~Cosmo Tech, Lyon | \textbf{Assistant Business Analyst}                             \\[0.2cm]
+                   & Learned a C-suite Decision Support Software for complex systems (road networks, energy grids)  \\
+                   & Elaborated a Proof of Concept for Airbus’ digital continuity strategy                          \\
+                   & Presented Cosmo’s simulation capabilities for Shop Floor Control and Final Assembly Line       \\[0.4cm]
+
+        2016-Pres. & \textemdash~UCLA Athletics, Los Angeles | \textbf{Customer Service Representative}             \\[0.2cm]
+                   & External Customer Service: cashier and UCLA Athletics PR                                       \\
+                   & Internal Customer Service: supply chain optimisation, team building, inventory                 \\[0.4cm]
+
+        2015       & \textemdash~CERN, Geneva | \textbf{Assistant Electronics Engineer}                             \\[0.2cm]
+                   & Learned HDL, LabVIEW and other hardware programming tools                                      \\
+                   & Assisted my team in a CERN-wide upgrade from CLIs to GUIs for FPGA data acquisition systems    \\[0.4cm]
+
+
+        2012       & \textemdash~Alcatel Submarine Networks, Paris | \textbf{Engineering Intern}                    \\[0.2cm]
+                   & Learned the internal workings of an international optical fiber deployment company             \\
+                   & Assisted the Product Line Manager in evaluating ASN's current offering vs European competitors \\[0.4cm]
     \end{tabular}
 \end{table}
 

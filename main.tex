@@ -1,6 +1,6 @@
 % Included packages
 % Document layout
-\documentclass[10pt]{report}
+\documentclass[12pt]{report}
 \usepackage[]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
@@ -18,53 +18,49 @@
 % Global formatting
 \setlist{noitemsep}
 \newgeometry{margin=0.5in}
-\newcommand{\tabitem}{\textbullet~~}
+\setlength\parindent{0pt}
 % \titlespacing{<command>}{<left>}{<before-sep>}{<after-sep>}[<right>]
-\titlespacing{\section}{0pt}{4pt}{4pt}
-
+\titlespacing{\section}{0pt}{0pt}{0pt}
+\titlespacing{\subsection}{0pt}{0pt}{4pt}
 
 \begin{document}
 
 \begin{center}
     \huge \textsc{Marius Peter} \\
-    \Large Sales | Engineering | Design
+    \large Sales $\star$ Engineering $\star$ Design
 \end{center}
 
-\begin{table}[H]
-    \section*{Experiences}
-    \toprule
-    \begin{tabular}{ll}
-        2017       & \textemdash~Cosmo Tech, Lyon | \textbf{Assistant Business Analyst}                             \\[0.2cm]
-                   & Learned a C-suite Decision Support Software for complex systems (road networks, energy grids)  \\
-                   & Elaborated a Proof of Concept for Airbus’ digital continuity strategy                          \\
-                   & Presented Cosmo’s simulation capabilities for Shop Floor Control and Final Assembly Line       \\[0.4cm]
+\section*{Experiences}
+\rule{\linewidth}{1pt}
+\subsection*{2017~\textemdash~Cosmo Tech, Lyon | \textbf{Assistant Business Analyst}}
+\begin{itemize}
+    \item Learned a C-suite Decision Support Software for complex systems (road networks, energy grids)
+    \item Elaborated a Proof of Concept for Airbus’ digital continuity strategy
+    \item Presented Cosmo’s simulation capabilities for Shop Floor Control and Final Assembly Line
+\end{itemize}
 
-        2016-Pres. & \textemdash~UCLA Athletics, Los Angeles | \textbf{Customer Service Representative}             \\[0.2cm]
-                   & External Customer Service: cashier and UCLA Athletics PR                                       \\
-                   & Internal Customer Service: supply chain optimisation, team building, inventory                 \\[0.4cm]
+\subsection*{2016-Pres.~\textemdash~UCLA Athletics, Los Angeles | \textbf{Customer Service Representative}}
+\begin{itemize}
+    \item  External Customer Service: cashier and UCLA Athletics PR
+    \item Internal Customer Service: supply chain optimisation, team building, inventory
+\end{itemize}
 
-        2015       & \textemdash~CERN, Geneva | \textbf{Assistant Electronics Engineer}                             \\[0.2cm]
-                   & Learned HDL, LabVIEW and other hardware programming tools                                      \\
-                   & Assisted my team in a CERN-wide upgrade from CLIs to GUIs for FPGA data acquisition systems    \\[0.4cm]
+\subsection*{2015~\textemdash~CERN, Geneva | \textbf{Assistant Electronics Engineer}}
+\begin{itemize}
+    \item Learned HDL, LabVIEW and other hardware programming tools
+    \item Assisted my team in a CERN-wide upgrade from CLIs to GUIs for FPGA data acquisition systems
+\end{itemize}
 
-
-        2012       & \textemdash~Alcatel Submarine Networks, Paris | \textbf{Engineering Intern}                    \\[0.2cm]
-                   & Learned the internal workings of an international optical fiber deployment company             \\
-                   & Assisted the Product Line Manager in evaluating ASN's current offering vs European competitors \\[0.4cm]
-    \end{tabular}
-\end{table}
+\subsection*{2012~\textemdash~Alcatel Submarine Networks, Paris | \textbf{Engineering Intern}}
+\begin{itemize}
+    \item Learned the internal workings of an international optical fiber deployment company
+    \item Assisted the Product Line Manager in evaluating ASN's current offering vs European competitors
+\end{itemize}
 
 \section*{Education}
-
-\section*{Technical Skills}
-
-\section*{Interpersonal Skills}
-
 \section*{Projects}
-
-
-
-
+\section*{Technical Skills}
+\section*{Interpersonal Skills}
 
 
 \end{document}

@@ -14,11 +14,19 @@
 \usepackage{lipsum}
 \usepackage{hyperref}
 
-\usepackage{../formatting}
+\pagenumbering{gobble}
+\setstretch{0.9}
+\newgeometry{margin=0.5in}
+\setlist{itemsep=-2pt, leftmargin=0.5in}
+% \titlespacing{<command>}{<left>}{<before-sep>}{<after-sep>}[<right>]
+\titlespacing{\section}{0pt}{-2pt}{-4pt}
+\titlespacing{\subsection}{0pt}{2pt}{2pt}
+\titlespacing{\subsubsection}{0.5in}{0pt}{2pt}
 
 
 \begin{document}
 
+\renewcommand\labelitemi{-}
 \centering
 \huge \textsc{Marius Peter}\\[0.2cm]
 \Large Sales $\star$ Engineering $\star$ Design\\[0.2cm]
@@ -26,7 +34,7 @@
 \normalsize
 11090 Strathmore Dr, Apt \#1,
 Los Angeles, CA 90024\\
-\href{mailto:mpeter@ucla.edu}{mpeter@ucla.edu} --- +1 818 284 3757\\
+\href{mailto:mpeter@ucla.edu}{mpeter@ucla.edu} / +1 818 284 3757\\
 
 % % Recap
 % \begin{itemize}
@@ -61,7 +69,7 @@ Los Angeles, CA 90024\\
 \subsubsection*{Customer Service Representative}
 \begin{itemize}
     \item  External Customer Service: cashier and UCLA Athletics PR
-    \item Internal Customer Service: supply chain optimisation, team building, inventory
+    \item Internal Customer Service: supply chain optimization, team building, inventory
 \end{itemize}
 \subsection*{06--07/2015 --- CERN, Geneva}
 \subsubsection*{Assistant Electronics Engineer}

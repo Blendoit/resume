@@ -1,5 +1,5 @@
 # .gitignore
-
+*.pdf
 *.aux
 *.fdb_latexmk
 *.log

@@ -11,95 +11,84 @@
 \usepackage[document]{ragged2e}
 \usepackage{lipsum}
 \usepackage{hyperref}
+\usepackage{mathptmx}
 
 \pagenumbering{gobble}
-\setstretch{0.9}
-\newgeometry{margin=0.7in}
-\setlist{itemsep=-2pt, leftmargin=0.5in}
-% \titlespacing{<command>}{<left>}{<before-sep>}{<after-sep>}[<right>]
-\titlespacing{\section}{0pt}{-2pt}{-4pt}
-\titlespacing{\subsection}{0pt}{2pt}{2pt}
-\titlespacing{\subsubsection}{0.5in}{0pt}{2pt}
+% \setstretch{0.8}
+\newgeometry{margin=1.5cm}
+\setlist{itemsep=-2pt, leftmargin=3cm}
+
+\newcommand{\cvsec}[1]{{\makebox[3cm][l]{\Large\textbf{#1}} \hrulefill\\[6pt]}}
+\newcommand{\cventry}[3]{{\large\makebox[3cm][l]{#1} \textbf{#2} #3}}
+\renewcommand\labelitemi{-}
 
 
 \begin{document}
 
-\renewcommand\labelitemi{-}
 \begin{center}
     \huge \textsc{Marius Peter}\\[0.2cm]
     % \Large Sales $\star$ Engineering $\star$ Design\\[0.2cm]
-
     \normalsize
     % 11090 Strathmore Dr, Apt \#1,\\
     Los Angeles, CA\\
     \href{mailto:mpeter@ucla.edu}{mpeter@ucla.edu} / +1 818 284 3757\\
 \end{center}
 
-\vfill~
-\section*{Education}
-\rule{\linewidth}{1pt}
-\subsection*{2014--2019 --- University of California, Los Angeles}
-\subsubsection*{B.S. in Aerospace Engineering}
+% \vfill~
+\cvsec{Education}
+\cventry{2014--2019}{B.S. in Aerospace Engineering}{University of California, Los Angeles}
 \begin{itemize}
     \item Technical breadth in Technology \& Management
- 	% \item Relevant coursework: control systems design \& optimization, electrical circuit design
     \item Electives: biomechanics, RFID and its application in manufacturing \& supply chain
 \end{itemize}
 
-\section*{Work}
-\rule{\linewidth}{1pt}\\
-\subsection*{Sep.--Dec. 2017 --- Cosmo Tech, Lyon}
-\subsubsection*{Assistant Business Analyst}
+\cvsec{Work}
+\cventry{Sep.--Dec. 2017}{Assistant Business Analyst}{Cosmo Tech, Lyon}
 \begin{itemize}
     \item Learned a Decision Support Software for complex systems (road networks, energy \& hydraulic grids)
-    \item Created a proof of concept for Airbus’ digital continuity strategy, using Model-Based Systems Engineering
-    \item Presented Cosmo’s modeling \& simulation capabilities for \textit{Shop Floor Control} and \textit{Final Assembly Line}
+    \item Created a proof of concept for Airbus’ digital continuity strategy (Model-Based Systems Engineering)
+    \item Presented Cosmo’s simulation capabilities for \textit{Shop Floor Control} and \textit{Final Assembly Line}
     \item Secured initial funding for a bespoke software solution developed for Airbus
 \end{itemize}
-\subsection*{June--July 2015 --- CERN, Geneva}
-\subsubsection*{Assistant Electronics Engineer}
+\cventry{June--July 2015}{Assistant Electronics Engineer}{CERN, Geneva}
 \begin{itemize}
     \item Learned HDL, LabVIEW and other hardware programming tools
     \item Assisted my team in a CERN-wide upgrade from CLIs to GUIs for FPGA data acquisition systems (embedded ARM Linux)
 \end{itemize}
-\subsection*{Apr.--May 2012 --- Alcatel Submarine Networks, Paris}
-\subsubsection*{Engineering Intern}
+\cventry{Apr.--May 2012}{Engineering Intern}{Alcatel Submarine Networks, Paris}
 \begin{itemize}
     \item Learned the internal workings of an international optical fiber deployment company
     \item Assisted the Product Line Manager in evaluating ASN's current offering vs European competitors
 \end{itemize}
 
-\section*{Projects}
-\rule{\linewidth}{1pt}\\
-\subsection*{UCLA Design--Build--Launch Senior Capstone}
+\cvsec{Projects}
+\cventry{}{UCLA Design--Build--Launch Senior Capstone}{}
 \begin{itemize}
     \item Model rocket design, manufacturing, testing \& analysis
     \item Lead the manufacturing of my team's rocket, which won first place amongst all undergrad engineering teams
 \end{itemize}
-\subsection*{Airfoil Design Tool}
+\cventry{}{Airfoil Design Tool}{(Python)}
 \begin{itemize}
     \item Software written for the design \& optimization of NACA airfoils complying with FAR 23 regulations
     \item  Available at \url{www.github.com/blendoit/UCLA_MAE_154B}
 \end{itemize}
-\subsection*{3D Design/CAD}
+\cventry{}{3D Design/CAD}{(Solidworks/Blender)}
 \begin{itemize}
     \item 10 years experience in geometry modeling, texturing, rendering \& visual FX
     \item Blender 3D renders at \url{www.deviantart.com/faquinou}
 \end{itemize}
 
-\section*{Certifications \& Licenses}
-\rule{\linewidth}{1pt}\\[0.2cm]
-\begin{itemize}
-	\item 03/2019 --- LEED Green Associate (sustainable building design, construction, and operations)
-    \item 03/2017 --- California M1 motorcycle license
-    \item 02/2016 --- AHA First Aid \& infant CPR
-\end{itemize}
+% \cvsec{Certifications \& Licenses}
+% \begin{itemize}
+%     \item 03/2019 --- LEED Green Associate (sustainable building design, construction, and operations)
+%     \item 03/2017 --- California M1 motorcycle license
+%     \item 02/2016 --- AHA First Aid \& infant CPR
+% \end{itemize}
 
-\section*{Skills}
-\rule{\linewidth}{1pt}\\[0.2cm]
+\cvsec{Skills}
 \begin{minipage}[t]{0.32\linewidth}
-    \subsection*{Computer Science}
-    \begin{itemize}
+    {\large\textbf{Computer Science}}
+    \begin{itemize}[leftmargin=*]
         \item Microsoft Suite \& \LaTeX
         \item Languages: VHDL/Verilog, MATLAB, Python, Tcl/Tk
         \item CAD packages: SOLIDWORKS, Blender 3D
@@ -107,19 +96,20 @@
 \end{minipage}
 ~
 \begin{minipage}[t]{0.32\linewidth}
-    \subsection*{Systems \& Industrial}
-    \begin{itemize}
+    {\large\textbf{Systems \& Industrial}}
+    \begin{itemize}[leftmargin=*]
         \item UML, SysML, BPMN
         \item AnyLogic, SIMPROCESS, MEGA HOPEX
     \end{itemize}
 \end{minipage}
 ~
 \begin{minipage}[t]{0.32\linewidth}
-    \subsection*{Languages}
-    \begin{itemize}
+    {\large\textbf{Languages}}
+    \begin{itemize}[leftmargin=*]
         \item Native: French, English
         \item Proficient: German
         \item Intermediate: Chinese (Mandarin)
     \end{itemize}
 \end{minipage}
+
 \end{document}

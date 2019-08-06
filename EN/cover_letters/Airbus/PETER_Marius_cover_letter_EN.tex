@@ -2,24 +2,27 @@
 \usepackage{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
-\usepackage{mathptmx}
 \usepackage{setspace}
 \usepackage{hyperref}
 
 
-\newgeometry{margin=1in}
-
-\signature{Marius Peter}
-\address{11090 Strathmore Dr\\Los Angeles CA 90024\\USA}
+\usepackage{mathptmx}
+% \renewcommand{\familydefault}{\sfdefault}
 
 \begin{document}
+
+
+\signature{Marius Peter}
+\longindentation=0pt
+% \let\raggedleft\raggedright
+\address{11090 Strathmore Dr\\Los Angeles CA 90024\\USA}
+
 
 \begin{letter}{
 \textbf{Subject:} Georgia Tech cover letter\\
 \textbf{Position:} Model-Based Systems Engineer\\
 }
-
-\opening{Dear Hiring Manager,}
+\opening{\vfill~Dear Hiring Manager,}
 
 The MBSE engineer opening at the GTRI caught my attention because of the many transferrable skills I could contribute in this role.
 Previously at Cosmo Tech, I developed my understanding of Model-Based Systems Engineering, UML and SysML; my responsiblities placed me at the forefront of our clients' requirements elicitation process. 
@@ -40,7 +43,9 @@ and to further develop my understanding of Model-Based System Engineering in an 
 
 The results I outline above lead me to consider the role of MBSE engineer at the very intersection of my experiences, education and passions.
 
-\closing{Thank you for your consideration thus far,}
+\closing{Thank you for your consideration,}
 
 \end{letter}
+
+
 \end{document}

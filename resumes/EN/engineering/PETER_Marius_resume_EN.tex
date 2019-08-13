@@ -11,30 +11,37 @@
 \usepackage[document]{ragged2e}
 \usepackage{lipsum}
 \usepackage{hyperref}
-\usepackage{mathptmx}
+\usepackage{fourier}
+% \usepackage{mathptmx}
 
 \pagenumbering{gobble}
-% \setstretch{0.8}
+\setstretch{1.2}
 \newgeometry{margin=1.5cm}
-\setlist{itemsep=-2pt, leftmargin=3cm}
+\setlist{itemsep=-4pt, before=\vspace{-8pt}, after=\vspace{-4pt}, leftmargin=3cm}
 
-\newcommand{\cvsec}[1]{{\makebox[3cm][l]{\Large\textbf{#1}} \hrulefill\\[6pt]}}
-\newcommand{\cventry}[3]{{\large\makebox[3cm][l]{#1} \textbf{#2} #3}}
+\newcommand{\cvsec}[1]{{\Large\makebox[3cm][l]{\rule{3cm}{0.4pt}} \textbf{#1} \hrulefill\\[6pt]}}
+\newcommand{\cventry}[3]{{\large\makebox[3cm][l]{#1} \textbf{#2}} --- #3\\}
 \renewcommand\labelitemi{-}
 
 
 \begin{document}
 
 \begin{center}
-    \huge \textsc{Marius Peter}\\[0.2cm]
-    % \Large Sales $\star$ Engineering $\star$ Design\\[0.2cm]
+    \huge \textbf{\textsc{Marius Peter}}\\[0.2cm]
+    \Large Sales $\star$ Engineering $\star$ Design\\[0.2cm]
     \normalsize
     % 11090 Strathmore Dr, Apt \#1,\\
     Los Angeles, CA\\
     \href{mailto:mpeter@ucla.edu}{mpeter@ucla.edu} / +1 818 284 3757\\
 \end{center}
 
-% \vfill~
+% \begin{itemize}
+%     \item \textbf{Sales}: secured initial funding for an industrial process modelling tool designed for the European aerospace sector
+%     \item \textbf{Engineering}: UCLA B.S. Aerospace Eng., 10 year Linux user (desktop, server \& embedded)
+%     \item Seeking a \textbf{sales engineering} mission within the American industrial sector for September 2019
+% \end{itemize}
+
+\vfill
 \cvsec{Education}
 \cventry{2014--2019}{B.S. in Aerospace Engineering}{University of California, Los Angeles}
 \begin{itemize}
@@ -45,15 +52,15 @@
 \cvsec{Work}
 \cventry{Sep.--Dec. 2017}{Assistant Business Analyst}{Cosmo Tech, Lyon}
 \begin{itemize}
-    \item Learned a Decision Support Software for complex systems (road networks, energy \& hydraulic grids)
-    \item Created a proof of concept for Airbus’ digital continuity strategy (Model-Based Systems Engineering)
-    \item Presented Cosmo’s simulation capabilities for \textit{Shop Floor Control} and \textit{Final Assembly Line}
+    \item Cosmo Tech publishes a Decision Support Software for complex systems (road networks, energy grids)
+    \item Created \& presented a proof of concept for Airbus' \textit{digital continuity} strategy using principles of Model-Based Systems Engineering
+    \item Showcased Cosmo’s simulation capabilities for \textit{Shop Floor Control} and \textit{Final Assembly Line}
     \item Secured initial funding for a bespoke software solution developed for Airbus
 \end{itemize}
 \cventry{June--July 2015}{Assistant Electronics Engineer}{CERN, Geneva}
 \begin{itemize}
     \item Learned HDL, LabVIEW and other hardware programming tools
-    \item Assisted my team in a CERN-wide upgrade from CLIs to GUIs for FPGA data acquisition systems (embedded ARM Linux)
+    \item Upgraded FPGA data acquisition systems from CLIs to GUIs (embedded ARM Linux)
 \end{itemize}
 \cventry{Apr.--May 2012}{Engineering Intern}{Alcatel Submarine Networks, Paris}
 \begin{itemize}
@@ -62,35 +69,33 @@
 \end{itemize}
 
 \cvsec{Projects}
-\cventry{}{UCLA Design--Build--Launch Senior Capstone}{}
+\cventry{Apr.--June 2019}{UCLA Design--Build--Launch}{Senior Capstone} 
 \begin{itemize}
     \item Model rocket design, manufacturing, testing \& analysis
-    \item Lead the manufacturing of my team's rocket, which won first place amongst all undergrad engineering teams
+    \item Lead the manufacturing of my team's rocket 
+    \item We won first place on all criteria (maximum apogee, intact payload, trajectory prediction...)
 \end{itemize}
-\cventry{}{Airfoil Design Tool}{(Python)}
+\cventry{Apr. 2019--Pres.}{Airfoil Design Tool}{Python \url{www.github.com/blendoit/UCLA_MAE_154B}}
 \begin{itemize}
     \item Software written for the design \& optimization of NACA airfoils complying with FAR 23 regulations
-    \item  Available at \url{www.github.com/blendoit/UCLA_MAE_154B}
+    \item Ultimate goal: develop an intuitive airfoil creation program, designed for non-technical persons 
 \end{itemize}
-\cventry{}{3D Design/CAD}{(Solidworks/Blender)}
+\cventry{2012--Pres.}{3D Design/CAD}{Solidworks/Blender \url{www.deviantart.com/faquinou}}
 \begin{itemize}
     \item 10 years experience in geometry modeling, texturing, rendering \& visual FX
-    \item Blender 3D renders at \url{www.deviantart.com/faquinou}
 \end{itemize}
 
-% \cvsec{Certifications \& Licenses}
-% \begin{itemize}
-%     \item 03/2019 --- LEED Green Associate (sustainable building design, construction, and operations)
-%     \item 03/2017 --- California M1 motorcycle license
-%     \item 02/2016 --- AHA First Aid \& infant CPR
-% \end{itemize}
+\cvsec{Certifications \& Licenses}
+\cventry{Mar. 2019}{LEED Green Associate}{Sustainable building design, construction, and operations}
+\cventry{Mar. 2017}{California M1 driving license}{Motorcycle license}
+\cventry{Feb. 2016}{First Aid \& infant CPR}{American Heart Association}
 
 \cvsec{Skills}
 \begin{minipage}[t]{0.32\linewidth}
     {\large\textbf{Computer Science}}
     \begin{itemize}[leftmargin=*]
         \item Microsoft Suite \& \LaTeX
-        \item Languages: VHDL/Verilog, MATLAB, Python, Tcl/Tk
+        \item Languages: Verilog, MATLAB, Python, Tcl/Tk
         \item CAD packages: SOLIDWORKS, Blender 3D
     \end{itemize}
 \end{minipage}

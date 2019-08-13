@@ -1,3 +1,3 @@
 # resume
 
-My resume, translated in French and English.
+My resumes and cover letters, translated in French and English.

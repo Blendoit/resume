@@ -1,116 +1,107 @@
-% Included packages
 \documentclass[10pt]{article}
 \usepackage[pass]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[french]{babel}
-% \usepackage{libertine}
 \usepackage{setspace}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage[document]{ragged2e}
 \usepackage{hyperref}
+\usepackage{fourier}
+% \usepackage{mathptmx}
 
 \pagenumbering{gobble}
-\setstretch{1}
-\newgeometry{margin=0.7in}
-\setlist{itemsep=-2pt, leftmargin=0.5in}
-% \titlespacing{<command>}{<left>}{<before-sep>}{<after-sep>}[<right>]
-\titlespacing{\section}{0pt}{-2pt}{-4pt}
-\titlespacing{\subsection}{0pt}{2pt}{2pt}
-\titlespacing{\subsubsection}{0.5in}{0pt}{2pt}
+\setstretch{1.4}
+\newgeometry{margin=1.5cm}
+\setlist{itemsep=-4pt, before=\vspace{-8pt}, after=\vspace{-4pt}, leftmargin=3cm}
+
+\newcommand{\cvsec}[1]{{\Large\makebox[3cm][l]{\rule{3cm}{0.4pt}} \textbf{#1} \hrulefill\\[6pt]}}
+\newcommand{\cventry}[3]{{\large\makebox[3cm][l]{#1} \textbf{#2}} --- #3\\}
+\renewcommand\labelitemi{-}
 
 
 \begin{document}
 
-\renewcommand\labelitemi{-}
 \begin{center}
-    \huge \textsc{Marius Peter}\\[0.2cm]
-    % \Large Sales $\star$ Engineering $\star$ Design\\[0.2cm]
+    \huge \textbf{\textsc{Marius Peter}}\\[0.2cm]
     \normalsize
     % 11090 Strathmore Dr, Apt \#1,\\
     Los Angeles, CA\\
     \href{mailto:mpeter@ucla.edu}{mpeter@ucla.edu} / +1 818 284 3757\\
     Date de naissance : 14/06/1996\\
 \end{center}
+
 \vfill
-\section*{Formation}
-\rule{\linewidth}{1pt}\\
-\subsection*{2014--2019 --- Université de Californie à Los Angeles}
-\subsubsection*{Bachelor of Science in Aerospace Engineering}
+\cvsec{Formation}
+\cventry{2014-2019}{Bachelor of Science, Aerospace Engineering}{Université de Californie à Los Angeles}
 \begin{itemize}
     \item Équivalent bac + 4 en génie aéronautique et aérospatial
     \item Spécialisation en commerce et technologie
 \end{itemize}
 
-\section*{Expériences Professionnelles}
-\rule{\linewidth}{1pt}\\
-\subsection*{sept.--déc. 2017 --- Cosmo Tech, Lyon}
-\subsubsection*{Assistant Business Analyst}
+\cvsec{Expériences Professionnelles}
+\cventry{sept.--déc. 2017}{Cosmo Tech, Lyon}{Assistant Business Analyst}
 \begin{itemize}
     \item Cosmo Tech est un éditeur de logiciel d’aide à la décision conçu pour le génie industriel européen
     \item Élaboration d’une preuve de concept pour la problématique de continuité numérique d’Airbus
     \item Modélisation \& simulation de systèmes complexes : réseaux de transport routier/électrique/hydraulique, chaîne de montage industrielle (\textit{Final Assembly Line})
 \end{itemize}
-% \subsection*{2016--2019 --- UCLA Athletics, Los Angeles}
+% \cventry{2016--2019 --- UCLA Athletics, Los Angeles}
 % \subsubsection*{Customer Service Representative}
 % \begin{itemize}
 %     \item Service client externe: caissier, \textit{branding} de UCLA
 %     \item Service client interne: logistique, \textit{team building}
 % \end{itemize}
-\subsection*{juin--juill. 2015 --- CERN, Genève}
-\subsubsection*{Assistant Electronics Engineer}
+\cventry{juin--juill. 2015}{CERN, Genève}{Assistant Electronics Engineer}
 \begin{itemize}
     \item Apprentissage de HDL et LabVIEW (programmation de hardware embarqué)
     \item Transition entre des interfaces textuelles à graphiques pour tous les systèmes embarqués de mesure scientifique au CERN (ARM Linux sur FPGA)
 \end{itemize}
-\subsection*{avr.--mai 2012 --- Alcatel Submarine Networks, Paris}
-\subsubsection*{Stagiaire}
+\cventry{avr.--mai 2012}{Alcatel Submarine Networks, Paris}{Stagiaire}
 \begin{itemize}
     \item Analyse du fonctionnement d’une entreprise internationale de fibre optique sous-marine
     \item Réalisation d’un benchmark de l’offre d’ASN aux côtés du Product Line Manager
 \end{itemize}
 
-\section*{Projets}
-\rule{\linewidth}{1pt}\\
-\subsection*{Projet de dernière année à UCLA: \textit{Design--Build--Launch}}
+\cvsec{Projets}
+\cventry{avr.--juin 2019}{Projet de fin d'études}{\textit{Design--Build--Launch}}
 \begin{itemize}
     \item Conception, usinage \& assemblage, test et analyse de vol d'un modèle réduit de fusée au sein d'une équipe d'étudiants en génie aérospatial
     \item En fin de trimestre, ma promotion s'est rendue dans le désert du Mojave pour effectuer 15 tirs de lancement
-    \item Mon équipe a obtenue première place sur tous les critères: apogée maximale, récupération du cargo intact (un œuf), exploitation des données récupérée en vol 
+    \item Mon équipe a obtenue première place sur tous les critères: apogée maximale, récupération du cargo intact (un œuf), exploitation des données récupérée en vol
 \end{itemize}
-\subsection*{Outil numérique de conception d'aile}
+\cventry{avr.--juin 2019}{Outil numérique de conception d'aile}{Python}
 \begin{itemize}
     \item Logiciel conçu pour le design \& optimisation de profils NACA en accord avec la législation fédérale américaine
-    \item  Disponible à l'adresse \url{www.github.com/blendoit/UCLA_MAE_154B}
+    \item Disponible à \url{www.github.com/blendoit/UCLA_MAE_154B}
 \end{itemize}
-\subsection*{Design/CAO}
+\cventry{2012--2019}{Design/CAO}{Solidworks/Blender}
 \begin{itemize}
     \item Sept ans d'expériences en création de géométrie, textures, rendus \& effets spéciaux
-    \item Portfolio à l'adresse \url{www.deviantart.com/faquinou}
+    \item \url{www.deviantart.com/faquinou}
 \end{itemize}
 
-\section*{Compétences}
-\rule{\linewidth}{1pt}\\[0.2cm]
-\begin{minipage}[t]{0.30\linewidth}
-    \subsection*{Informatique \& CAO}
-    \begin{itemize}
+\cvsec{Compétences}
+\begin{minipage}[t]{0.32\linewidth}
+    {\large\textbf{Informatique \& CAO}}
+    \begin{itemize}[leftmargin=*]
         \item Suite Microsoft \& \LaTeX\
         \item MATLAB, Python
         \item SOLIDWORKS, Blender 3D
     \end{itemize}
 \end{minipage}
 ~
-\begin{minipage}[t]{0.36\linewidth}
-    \subsection*{Systèmes \& Industriel}
-    \begin{itemize}
+\begin{minipage}[t]{0.32\linewidth}
+    {\large\textbf{Systèmes \& Industriel}}
+    \begin{itemize}[leftmargin=*]
         \item UML, SysML, BPMN
         \item AnyLogic, SIMPROCESS, MEGA HOPEX
     \end{itemize}
 \end{minipage}
 ~
-\begin{minipage}[t]{0.30\linewidth}
-    \subsection*{Langues}
-    \begin{itemize}
+\begin{minipage}[t]{0.32\linewidth}
+    {\large\textbf{Langues}}
+    \begin{itemize}[leftmargin=*]
         \item Bilingue français/anglais
         \item 10 ans d'allemand et de mandarin
     \end{itemize}

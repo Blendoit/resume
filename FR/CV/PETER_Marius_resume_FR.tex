@@ -11,13 +11,13 @@
 % \usepackage{mathptmx}
 
 \pagenumbering{gobble}
-\setstretch{1.2}
+\setstretch{1.4}
 \newgeometry{margin=1.5cm}
-\setlist{itemsep=-4pt, before=\vspace{-8pt}, after=\vspace{-4pt}, leftmargin=3cm}
+\setlist{itemsep=-4pt, before=\vspace{-8pt}, after=\vspace{-4pt}, leftmargin=3.1cm, label={-}}
 
 \newcommand{\cvsec}[1]{{\Large\makebox[3cm][l]{\rule{3cm}{0.4pt}} \textbf{#1} \hrulefill\\[6pt]}}
-\newcommand{\cventry}[3]{{\large\makebox[3cm][l]{#1} \textbf{#2} --- #3\\}}
-\renewcommand\labelitemi{-}
+\newcommand{\cventry}[3]{{\large\makebox[3cm][r]{#1~~~~} \textbf{#2} --- #3\\}}
+% \renewcommand\labelitemi{-}
 
 
 \begin{document}
@@ -40,35 +40,39 @@
 \end{itemize}
 
 \cvsec{Expériences Professionnelles}
-\cventry{sept.--déc. 2017}{Cosmo Tech, Lyon}{Assistant Business Analyst}
+\cventry{sept.--déc. 2017}{Assistant Business Analyst}{Cosmo Tech, Lyon}
 \begin{itemize}
     \item Cosmo Tech est un éditeur de logiciel d’aide à la décision conçu pour le génie industriel européen
     \item Élaboration d’une preuve de concept pour la problématique de continuité numérique d’Airbus
-    \item Modélisation \& simulation de systèmes complexes : réseaux de transport routier/électrique/hydraulique, chaîne de montage industrielle (\textit{Final Assembly Line})
+    \item \textit{Benchmark} comparant la méthodologie d'Airbus, le produit de Cosmo, ainsi qu'un logiciel concurrent 
+    \item Mon équipe de \textit{business development} a securisé le financement d'une solution pour Airbus 
+    % \item Modélisation \& simulation de systèmes complexes : réseaux de transport routier/électrique/hydraulique, chaîne de montage industrielle (\textit{Final Assembly Line})
 \end{itemize}
-% \cventry{2016--2019 --- UCLA Athletics, Los Angeles}
-% \subsubsection*{Customer Service Representative}
+
+% \cventry{2016--2019}{Customer Service Representative}{UCLA Athletics, Los Angeles}
 % \begin{itemize}
 %     \item Service client externe: caissier, \textit{branding} de UCLA
 %     \item Service client interne: logistique, \textit{team building}
 % \end{itemize}
-\cventry{juin--juill. 2015}{CERN, Genève}{Assistant Electronics Engineer}
+
+\cventry{juin--juill. 2015}{Assistant Electronics Engineer}{CERN, Genève}
 \begin{itemize}
-    \item Apprentissage de HDL et LabVIEW (programmation de hardware embarqué)
+    \item Apprentissage de VHDL et LabVIEW (programmation de hardware embarqué)
     \item Transition entre des interfaces textuelles à graphiques pour tous les systèmes embarqués de mesure scientifique au CERN (ARM Linux sur FPGA)
 \end{itemize}
-\cventry{avr.--mai 2012}{Alcatel Submarine Networks, Paris}{Stagiaire}
+
+\cventry{avr.--mai 2012}{Stagiaire}{Alcatel Submarine Networks, Paris}
 \begin{itemize}
     \item Analyse du fonctionnement d’une entreprise internationale de fibre optique sous-marine
-    \item Réalisation d’un benchmark de l’offre d’ASN aux côtés du Product Line Manager
+    \item Réalisation d’un benchmark de l’offre d’ASN aux côtés du \textit{product line manager}
 \end{itemize}
 
 \cvsec{Projets}
 \cventry{avr.--juin 2019}{Projet de fin d'études}{\textit{Design--Build--Launch}}
 \begin{itemize}
-    \item Conception, usinage \& assemblage, test et analyse de vol d'un modèle réduit de fusée au sein d'une équipe d'étudiants en génie aérospatial
-    \item En fin de trimestre, ma promotion s'est rendue dans le désert du Mojave pour effectuer 15 tirs de lancement
-    \item Mon équipe a obtenue première place sur tous les critères: apogée maximale, récupération du cargo intact (un œuf), exploitation des données récupérée en vol
+    \item Conception, usinage \& assemblage, test et analyse de vol d'un modèle réduit de fusée
+    \item Ma promotion s'est rendue dans le désert du Mojave afin d'effectuer 15 tirs de lancement
+    \item Mon équipe a obtenue première place sur tous les critères: apogée maximale, récupération du cargo intact (un œuf), exploitation des données récupérées en vol
 \end{itemize}
 \cventry{avr.--juin 2019}{Outil numérique de conception d'aile}{Python}
 \begin{itemize}

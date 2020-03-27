@@ -1,0 +1,90 @@
+#+OPTIONS: toc:nil num:nil date:nil
+
+#+LATEX_CLASS_OPTIONS: [10pt]
+#+LATEX_HEADER: \usepackage[margin=1in]{geometry}
+#+LATEX_HEADER: \usepackage{fullpage}
+#+LATEX_HEADER: \usepackage{fourier}
+#+LATEX_HEADER: \usepackage{enumitem}
+#+LATEX_HEADER: \usepackage{nopageno}
+
+#+LATEX_HEADER_EXTRA: \setitemize{noitemsep}
+#+LATEX_HEADER_EXTRA: \renewcommand\labelitemi{-}
+
+|                       <c>                       |
+|          \huge *\textsc{Marius Peter}*          |
+|                                                 |
+| \Large Sales $\star$ Engineering $\star$ Design |
+|                                                 |
+|                 Los Angeles, CA                 |
+|        [[mailto:mpeter@ucla.edu][mpeter@ucla.edu]] / +1 818 284 3757        |
+
+    # - *Sales*: secured initial funding for an industrial process modelling tool
+    #   designed for the European aerospace sector
+    # - *Engineering*: UCLA B.S. Aerospace Eng., 10 year Linux user (desktop,
+    #   server & embedded)
+    # - Seeking a *sales engineering* mission within the American industrial
+    #   sector for September 2019
+
+* \rule{1cm}{0.4pt}Education \hrulefill
+
+** B.S. in Aerospace Engineering
+- 2014--2019 :: B.S. in Aerospace Engineering --- University of California, Los Angeles
+  - Technical breadth in Technology & Management
+  - Electives: biomechanics, RFID and its application in manufacturing & supply chain
+  - PID Controller Design \textbullet
+    Fluid Mechanics \textbullet
+    Thermodynamics \textbullet
+    Aircraft Propulsion \textbullet
+
+* \rule{1cm}{0.4pt}Work \hrulefill
+
+- Nov. 2019--Pres. :: Systems Test Engineer --- Safran Aerosystems, Los Angeles
+  - Created the initial proposal for a novel water system onboard a supersonic
+    business jet
+  - Autonomously designed and constructed a test rig for a water & waste system
+  - Supported the Predictive Maintenance program for highly stressed rotary
+    equipment (vacuum generators...)
+
+- Sep.--Dec. 2017 :: Assistant Business Analyst --- Cosmo Tech, Lyon
+  - Cosmo Tech publishes a Decision Support Software for complex systems (road
+    networks, energy grids)
+  - Created & presented a proof of concept for Airbus' /digital continuity/
+    strategy using principles of Model-Based Systems Engineering
+  - Showcased Cosmo’s simulation capabilities for /Shop Floor Control/ and
+    /Final Assembly Line/
+  - Secured initial funding for a bespoke software solution developed for Airbus
+- June--July 2015 :: Assistant Electronics Engineer --- CERN, Geneva
+  - Learned HDL, LabVIEW and core concepts of hardware programming
+  - Upgraded FPGA data acquisition systems from CLIs to GUIs (embedded ARM Linux)
+- Apr.--May 2012 :: Engineering Intern --- Alcatel Submarine Networks, Paris
+  - Learned the internal workings of an international optical fiber deployment company
+  - Assisted the Product Line Manager in evaluating ASN's current offering vs European competitors
+
+* \rule{1cm}{0.4pt}Projects \hrulefill
+
+- Apr.--June 2019 :: UCLA Design--Build--Launch --- Senior Capstone
+  - Model rocket design, manufacturing, testing & analysis
+  - Lead the manufacturing of my team's rocket: mill & lathe, 3D printing, fiberglass, plywood...
+  - We won first place on all criteria: maximum apogee, intact payload, trajectory prediction...
+
+- Apr. 2019--Pres. :: Aircraft Studio --- [[https:www.github.com/Blendoit/Aircraft_Studio]]
+  - Broadened the scope of development of a program written for UCLA's aircraft design course
+  - Initial goal: design FAR 23 compliant NACA airfoils and optimize for weight using a genetic algorithm
+  - Ultimate goal: develop an integrated aircraft creation suite designed for non-technical persons
+
+- 2012--Pres. :: Solidworks/Blender --- [[https:www.deviantart.com/faquinou]]
+  - 8 years experience in geometry modeling, texturing, rendering & visual FX
+
+* \rule{1cm}{0.4pt}Certifications & Licenses \hrulefill
+
+- Dec. 2019 :: Linux Foundation Certified Engineer
+  - Advanced Linux administration and engineering
+- Mar. 2019 :: LEED Green Associate
+  - Sustainable building design, construction, and operations
+
+* \rule{1cm}{0.4pt}Skills \hrulefill
+
+| *Computer Science*              | *Systems & Industrial*           | *Languages*                      |
+| Microsoft Suite & \LaTeX        | UML, SysML, BPMN                 | Native: French, English          |
+| Verilog, MATLAB, Python, Tcl/Tk | AnyLogic, SIMPROCESS, MEGA HOPEX | Proficient: German               |
+| CAD: SOLIDWORKS, Blender        |                                  | Intermediate: Chinese (Mandarin) |

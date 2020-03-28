@@ -13,6 +13,8 @@
 |                       <c>                       |
 |          \huge *\textsc{Marius Peter}*          |
 |                                                 |
+|         \large *Full Curriculum Vitae*          |
+|                                                 |
 | \Large Sales $\star$ Engineering $\star$ Design |
 |                                                 |
 |                 Los Angeles, CA                 |
@@ -63,30 +65,30 @@
 - Learned HDL, LabVIEW and core concepts of hardware programming and data acquisition
 - Upgraded FPGA data acquisition systems from CLIs to GUIs (embedded ARM Linux)
 
-# ** Engineering Intern --- Alcatel Submarine Networks, Paris \hfill Apr.--May 2012
+** Engineering Intern --- Alcatel Submarine Networks, Paris \hfill Apr.--May 2012
 
-# - Learned the internal workings of an international optical fiber deployment
-#   company
-# - Assisted the Product Line Manager in evaluating ASN's current offering vs
-#   European competitors
+- Learned the internal workings of an international optical fiber deployment
+  company
+- Assisted the Product Line Manager in evaluating ASN's current offering vs
+  European competitors
 
-# * Projects
+* Projects
 
-# ** UCLA Design--Build--Launch --- Senior Capstone \hfill Apr.--June 2019
+** UCLA Design--Build--Launch --- Senior Capstone \hfill Apr.--June 2019
 
-# - Model rocket design, manufacturing, testing & analysis
-# - Lead the manufacturing of my team's rocket: mill & lathe, 3D printing, fiberglass, plywood...
-# - We won first place on all criteria: maximum apogee, intact payload, trajectory prediction...
+- Model rocket design, manufacturing, testing & analysis
+- Lead the manufacturing of my team's rocket: mill & lathe, 3D printing, fiberglass, plywood...
+- We won first place on all criteria: maximum apogee, intact payload, trajectory prediction...
 
-# ** Aircraft Studio --- [[https:www.github.com/Blendoit/Aircraft_Studio]] \hfill Apr. 2019--Pres.
+** Aircraft Studio --- [[https:www.github.com/Blendoit/Aircraft_Studio]] \hfill Apr. 2019--Pres.
 
-# - Broadened the scope of development of a program written for UCLA's aircraft design course
-# - Initial goal: design FAR 23 compliant NACA airfoils and optimize for weight using a genetic algorithm
-# - Ultimate goal: develop an integrated aircraft creation suite designed for non-technical persons
+- Broadened the scope of development of a program written for UCLA's aircraft design course
+- Initial goal: design FAR 23 compliant NACA airfoils and optimize for weight using a genetic algorithm
+- Ultimate goal: develop an integrated aircraft creation suite designed for non-technical persons
 
-# ** Solidworks/Blender --- [[https:www.deviantart.com/faquinou]] \hfill 2012--Pres.
+** Solidworks/Blender --- [[https:www.deviantart.com/faquinou]] \hfill 2012--Pres.
 
-# - 8 years experience in geometry modeling, texturing, rendering & visual FX
+- 8 years experience in geometry modeling, texturing, rendering & visual FX
 
 * Certifications & Licenses
 
@@ -96,8 +98,20 @@
 
 * Skills
 
-| / |                                 | <>                            |                                  |
-|   | \large *Computer Science*       | \large *Systems & Industrial* | \large *Languages*               |
-|   | Microsoft Suite & \LaTeX        | UML, SysML, BPMN              | Native: French, English          |
-|   | Verilog, MATLAB, Python, Tcl/Tk | AnyLogic, SIMPROCESS          | Proficient: German               |
-|   | SOLIDWORKS, Blender             | LabVIEW                       | Intermediate: Chinese (Mandarin) |
+** Computer Science
+
+- Microsoft Suite & \LaTeX
+- Verilog, MATLAB, Python, Tcl/Tk
+- SOLIDWORKS, Blender
+
+** Systems & Industrial
+
+- UML, SysML, BPMN
+- AnyLogic, SIMPROCESS
+- LabVIEW
+
+** Languages
+
+-  Native: French, English
+-  Proficient: German
+-  Intermediate: Chinese (Mandarin)

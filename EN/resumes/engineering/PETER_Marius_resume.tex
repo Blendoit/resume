@@ -1,43 +1,40 @@
 \documentclass[10pt]{article}
-\usepackage{geometry}
-\usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
-\usepackage{setspace}
-\usepackage{enumitem}
-\usepackage{titlesec}
-\usepackage[document]{ragged2e}
-\usepackage{hyperref}
-\usepackage{fourier}
+\usepackage[left=2.2cm,%
+           right=2.2cm,%
+             top=1.4cm,%
+             bottom=1.4cm]{geometry}
+\usepackage[english]{babel}     % English typographical conventions
+\usepackage{enumitem}           % Customize list items
+\usepackage{titlesec}           % Customize section spacing
+\usepackage[document]{ragged2e} % Page layout
+\usepackage{hyperref}           % Hyperlinks!
 
+%% Fonts
+\usepackage{fontspec}
+\setmainfont{Public Sans}
+\setmonofont{Hermit}
+\newfontfamily\jost{Jost}
+
+%% Page layout
+\setlist{noitemsep,%
+            before=\vspace{-4pt},%
+             after=\vspace{-2pt},%
+        leftmargin=3.1cm}
 \pagenumbering{gobble}
-\newgeometry{margin=1.4cm}
-\setlist{itemsep=-2pt, before=\vspace{-4pt}, after=\vspace{-2pt}, leftmargin=3.1cm}
 
-\newcommand{\cvsec}[1]{{\Large\makebox[3cm][l]{\rule{3cm}{0.4pt}} \textbf{#1} \hrulefill\\[6pt]}}
-\newcommand{\cventry}[3]{{\large\makebox[3cm][r]{#1~~~~} \textbf{#2}} --- #3\\}
-\renewcommand\labelitemi{-}
+%% Section numbering
+\newcommand{\cvsec}[1]{{\Large\makebox[3cm][l]{\rule{3cm}{0.4pt}}{\jost\textbf{#1}} \hrulefill\\[6pt]}}
+\newcommand{\cventry}[3]{\makebox[3cm][r]{#1~~~~}{\jost\large\textbf{#2}} --- #3\\}
 
 
 \begin{document}
 
 \begin{center}
-  \huge \textbf{\textsc{Marius Peter}}\\[0.2cm]
-  \Large Sales $\star$ Engineering $\star$ Design\\[0.2cm]
-  \normalsize
-  % 11090 Strathmore Dr, Apt \#1,\\
-  Los Angeles, CA\\
-  \href{mailto:mpeter@ucla.edu}{mpeter@ucla.edu} / +1 818 284 3757\\
+  \Huge \jost\textbf{Marius Peter}\\[0.2em]
+  \Large Sales * Engineering * Design\\[0.2em]
+  \normalsize Los Angeles, CA\\[0.2em]
+  \texttt{\href{mailto:mpeter@ucla.edu}{mpeter@ucla.edu} / +1 818 284 3757}\\
 \end{center}
-
-% \begin{itemize}
-% \item \textbf{Sales}: secured initial funding for an industrial process
-%   modelling tool designed for the European aerospace sector
-% \item \textbf{Engineering}: UCLA B.S. Aerospace Eng., 10 year Linux user
-%   (desktop, server \& embedded)
-% \item Seeking a \textbf{sales engineering} mission within the American
-%   industrial sector for September 2019
-% \end{itemize}
-
 \vfill
 
 \cvsec{Education}
@@ -59,75 +56,60 @@
 
 \cventry{Nov. 2019--Pres.}{Systems Test Engineer}{Safran Passenger Solutions, Los Angeles}
 \begin{itemize}
-\item Created the initial proposal for a novel water system onboard
-  a supersonic business jet
-\item Autonomously designed and constructed a test rig for a water \& waste system
-\item Supported the Predictive Maintenance program for highly stressed rotary
-  equipment (vacuum generators...)
+\item Created the initial proposal for a novel water system on a
+  supersonic business jet
+\item Autonomously designed and constructed a test rig for a water \&
+  waste system
+\item Supported the Predictive Maintenance program for highly stressed
+  rotary equipment (vacuum generators...)
 \end{itemize}
 
 \cventry{Sep.--Dec. 2017}{Assistant Business Analyst}{Cosmo Tech, Lyon}
 \begin{itemize}
-\item Cosmo Tech publishes a Decision Support Software for complex systems (road
-  networks, energy grids)
-\item Created \& presented a proof of concept for Airbus' \textit{digital
-    continuity} strategy using principles of Model-Based Systems Engineering
-\item Showcased Cosmo’s simulation capabilities for \textit{Shop Floor Control}
-  and \textit{Final Assembly Line}
-\item Secured initial funding for a bespoke software solution developed for
-  Airbus
+\item Cosmo Tech publishes a Decision Support Software for complex
+  systems (road networks, energy grids)
+\item Created \& presented a proof of concept for Airbus'
+  \textit{digital continuity} strategy using principles of Model-Based
+  Systems Engineering
+\item Secured initial funding from Airbus for a bespoke software
+  solution for \textit{Shop Floor Control} and \textit{Final Assembly
+    Line} management
 \end{itemize}
 
 \cventry{June--July 2015}{Assistant Electronics Engineer}{CERN, Geneva}
 \begin{itemize}
-\item Learned HDL, LabVIEW and core concepts of hardware programming and data acquisition
-\item Upgraded FPGA data acquisition systems from CLIs to GUIs (embedded ARM
-  Linux)
+\item Learned HDL, LabVIEW and core concepts of hardware programming
+  and DAQ
+\item Upgraded FPGA data acquisition systems from CLIs to GUIs
+  (embedded ARM Linux)
 \end{itemize}
-
-% \cventry{Apr.--May 2012}{Engineering Intern}{Alcatel Submarine Networks,
-% Paris}
-% \begin{itemize}
-% \item Learned the internal workings of an international optical fiber
-%   deployment company
-% \item Assisted the Product Line Manager in evaluating ASN's current offering
-%   vs European competitors
-% \end{itemize}
 
 \cvsec{Projects}
 
-\cventry{Apr.--June 2019}{UCLA Design--Build--Launch}{Senior Capstone}
+\cventry{Apr.--June 2019}{UCLA Design-Build-Launch}{Senior Capstone}
 \begin{itemize}
 \item Model rocket design, manufacturing, testing \& analysis
-\item Lead the manufacturing of my team's rocket: mill \& lathe, 3D printing,
-  fiberglass, plywood...
-\item We won first place on all criteria: maximum apogee, intact payload,
-  trajectory prediction...
+\item Lead the manufacturing of our rocket: mill \& lathe, 3D
+  printing, fiberglass, plywood...
+\item We won first place on all criteria: max.\ apogee, intact
+  payload, trajectory prediction...
 \end{itemize}
 
 \cventry{Apr. 2019--Pres.}{Aircraft Studio}{Python \url{www.github.com/Blendoit/Aircraft_Studio}}
 \begin{itemize}
-\item Broadened the scope of development of a program written for UCLA's
-  aircraft design course
-\item Initial goal: design FAR 23 compliant NACA airfoils and optimize for weight using a genetic algorithm
-\item Ultimate goal: develop an integrated aircraft creation suite designed for non-technical persons
+\item Broadened the scope of a program written for UCLA's aircraft
+  design course
+\item Initial goal: design FAR 23 compliant NACA airfoils and optimize
+  for weight using a Monte Carlo simulation, then a genetic algorithm
+\item Ultimate goal: develop an aircraft creation suite designed for
+  non-technical persons
 \end{itemize}
 
 \cventry{2012--Pres.}{3D Design/CAD}{Solidworks/Blender \url{www.deviantart.com/faquinou}}
 \begin{itemize}
-\item 7 years experience in geometry modeling, texturing, rendering \& visual FX
+\item 7 years experience in geometry modeling, texturing, rendering \&
+  visual FX
 \end{itemize}
-
-\cvsec{Certifications \& Licenses}
-
-\cventry{Dec. 2020}{Linux Foundation Certified Engineer}{Advanced Linux
-  administration and engineering}
-
-\cventry{Mar. 2019}{LEED Green Associate}{Sustainable building design,
-  construction, and operations}
-
-%% \cventry{Mar. 2017}{California M1 driving license}{Motorcycle license}
-%% \cventry{Feb. 2016}{First Aid \& infant CPR}{American Heart Association}
 
 \cvsec{Skills}
 \begin{minipage}[t]{0.32\linewidth}
@@ -135,7 +117,7 @@
   \begin{itemize}[leftmargin=*]
   \item Microsoft Suite \& \LaTeX
   \item Languages: Verilog, MATLAB, Python, Tcl/Tk
-  \item CAD: SOLIDWORKS, Blender 3D
+  \item CAD: SOLIDWORKS, Blender
   \end{itemize}
 \end{minipage}
 ~

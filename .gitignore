@@ -1,3 +1,6 @@
 # .gitignore
 *.synctex.gz
 *auto/
+*.log
+*.aux
+*.out

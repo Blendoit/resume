@@ -1,25 +1,46 @@
-\documentclass[10pt]{article}
-\usepackage[left=2.2cm,%
-           right=2.2cm,%
-             top=1.4cm,%
-             bottom=1.4cm]{geometry}
+\documentclass[11pt]{article}
+\usepackage[left = 1.8cm,
+           right = 1.8cm,
+             top = 1.4cm,
+          bottom = 1.4cm,]{geometry}
 \usepackage[english]{babel}     % English typographical conventions
 \usepackage{enumitem}           % Customize list items
 \usepackage{titlesec}           % Customize section spacing
 \usepackage[document]{ragged2e} % Page layout
 \usepackage{hyperref}           % Hyperlinks!
 
-%% Fonts
+%% Beautiful fonts ONLY
 \usepackage{fontspec}
-\setmainfont{Public Sans}
-\setmonofont{Hermit}
-\newfontfamily\jost{Jost}
+%% Regular font
+\setmainfont{Public Sans}[
+ Path           = C:/Users/blend/AppData/Roaming/.emacs.d/fonts/,
+ Extension      = .ttf         ,
+ UprightFont    = *-regular    ,
+ BoldFont       = *-bold       ,
+ ItalicFont     = *-italic     ,
+ BoldItalicFont = *-bolditalic ,]
+%% Monospaced font
+\setmonofont{Courier Prime}[
+ Path           = C:/Users/blend/AppData/Roaming/.emacs.d/fonts/,
+ Extension      = .ttf         ,
+ UprightFont    = *-regular    ,
+ BoldFont       = *-bold       ,
+ ItalicFont     = *-italic     ,
+ BoldItalicFont = *-bolditalic ,]
+%% Heading font
+\newfontfamily\jost{Jost}[
+ Path           = C:/Users/blend/AppData/Roaming/.emacs.d/fonts/,
+ Extension      = .ttf         ,
+ UprightFont    = *-regular    ,
+ BoldFont       = *-bold       ,
+ ItalicFont     = *-italic     ,
+ BoldItalicFont = *-bolditalic ,]
 
 %% Page layout
-\setlist{noitemsep,%
-            before=\vspace{-4pt},%
-             after=\vspace{-2pt},%
-        leftmargin=3.1cm}
+\setlist{noitemsep ,
+            before = \vspace{-4pt},
+             after = \vspace{-2pt},
+        leftmargin = 3.1cm,}
 \pagenumbering{gobble}
 
 %% Section numbering
@@ -30,9 +51,8 @@
 \begin{document}
 
 \begin{center}
-  \Huge \jost\textbf{Marius Peter}\\[0.2em]
-  \Large Sales * Engineering * Design\\[0.2em]
-  \normalsize Los Angeles, CA\\[0.2em]
+  \Huge \jost\textbf{Marius Peter}\\[0.4em]
+  \normalsize Los Angeles, CA\\
   \texttt{\href{mailto:mpeter@ucla.edu}{mpeter@ucla.edu} / +1 818 284 3757}\\
 \end{center}
 \vfill
@@ -88,7 +108,7 @@
 
 \cventry{Apr.--June 2019}{UCLA Design-Build-Launch}{Senior Capstone}
 \begin{itemize}
-\item Model rocket design, manufacturing, testing \& analysis
+\item Competition: design, manufacturing, testing \& analysis of a model rocket
 \item Lead the manufacturing of our rocket: mill \& lathe, 3D
   printing, fiberglass, plywood\ldots
 \item We won first place on all criteria: max.\ apogee, intact
@@ -113,7 +133,7 @@
 
 \cvsec{Skills}
 \begin{minipage}[t]{0.32\linewidth}
-  {\large\textbf{Computer Science}}
+  {\large \jost\textbf{Computer Science}}
   \begin{itemize}[leftmargin=*]
   \item Microsoft Suite \& \LaTeX\
   \item Languages: Verilog, MATLAB, Python, Tcl/Tk
@@ -122,7 +142,7 @@
 \end{minipage}
 ~\
 \begin{minipage}[t]{0.32\linewidth}
-  {\large\textbf{Systems \& Industrial}}
+  {\large \jost\textbf{Systems \& Industrial}}
   \begin{itemize}[leftmargin=*]
   \item UML, SysML, BPMN
   \item AnyLogic, SIMPROCESS, MEGA HOPEX
@@ -131,7 +151,7 @@
 \end{minipage}
 ~\
 \begin{minipage}[t]{0.32\linewidth}
-  {\large\textbf{Languages}}
+  {\large \jost\textbf{Languages}}
   \begin{itemize}[leftmargin=*]
   \item Native: French, English
   \item Proficient: German

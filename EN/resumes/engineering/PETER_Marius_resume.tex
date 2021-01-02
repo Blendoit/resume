@@ -1,8 +1,8 @@
-\documentclass[11pt]{article}
-\usepackage[left = 1.8cm,
-           right = 1.8cm,
-             top = 1.4cm,
-          bottom = 1.4cm,]{geometry}
+\documentclass[10pt]{article}
+\usepackage[left = 2.4cm,
+           right = 2.4cm,
+             top = 2.2cm,
+          bottom = 2.2cm,]{geometry}
 \usepackage[english]{babel}     % English typographical conventions
 \usepackage{enumitem}           % Customize list items
 \usepackage{titlesec}           % Customize section spacing
@@ -37,16 +37,15 @@
  BoldItalicFont = *-bolditalic ,]
 
 %% Page layout
-\setlist{noitemsep ,
-            before = \vspace{-4pt},
-             after = \vspace{-2pt},
-        leftmargin = 3.1cm,}
+\setlist{before     = \vspace{-4pt} ,
+         after      = \vspace{-2pt} ,
+         leftmargin = 3.1cm         ,
+         noitemsep                  ,}
 \pagenumbering{gobble}
 
-%% Section numbering
-\newcommand{\cvsec}[1]{{\Large\makebox[3cm][l]{\rule{3cm}{0.4pt}}{\jost\textbf{#1}} \hrulefill\\[6pt]}}
+%% Sections & entries
+\newcommand{\cvsec}[1]{{\Large\makebox[3cm][l]{\rule{3cm}{0.4pt}}{\jost\textbf{#1}}\hrulefill\\[6pt]}}
 \newcommand{\cventry}[3]{\makebox[3cm][r]{#1~~~~}{\jost\large\textbf{#2}} --- #3\\}
-
 
 \begin{document}
 
@@ -60,7 +59,6 @@
 \cvsec{Education}
 
 \cventry{2014--2019}{B.S. in Aerospace Engineering}{University of California, Los Angeles}
-
 \begin{itemize}
 \item Technical breadth in Technology \& Management
 \item Electives: biomechanics, RFID and its application in manufacturing \& supply chain
@@ -106,7 +104,7 @@
 
 \cvsec{Projects}
 
-\cventry{Apr.--June 2019}{UCLA Design-Build-Launch}{Senior Capstone}
+\cventry{Apr.--June 2019}{Design-Build-Launch}{UCLA Senior Capstone}
 \begin{itemize}
 \item Competition: design, manufacturing, testing \& analysis of a model rocket
 \item Lead the manufacturing of our rocket: mill \& lathe, 3D
@@ -140,7 +138,7 @@
   \item CAD: SOLIDWORKS, Blender
   \end{itemize}
 \end{minipage}
-~\
+~%
 \begin{minipage}[t]{0.32\linewidth}
   {\large \jost\textbf{Systems \& Industrial}}
   \begin{itemize}[leftmargin=*]
@@ -149,7 +147,7 @@
   \item LabVIEW
   \end{itemize}
 \end{minipage}
-~\
+~%
 \begin{minipage}[t]{0.32\linewidth}
   {\large \jost\textbf{Languages}}
   \begin{itemize}[leftmargin=*]

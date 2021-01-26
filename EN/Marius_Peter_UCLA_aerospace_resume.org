@@ -1,0 +1,157 @@
+# -*- mode: org; eval: (visual-line-mode); -*-
+
+#+TITLE: Complete Resumé
+#+AUTHOR: Marius Peter
+#+DATE: <2021-01-25 Mon>
+
+#+OPTIONS: title:nil toc:nil tags:nil
+
+# Ensure room for header and footer
+#+LATEX_HEADER: \usepackage{geometry}[
+#+LATEX_HEADER:  left   = 1in    ,
+#+LATEX_HEADER:  right  = 1in    ,
+#+LATEX_HEADER:  top    = 1in    ,
+#+LATEX_HEADER:  bottom = 1.75in ,]
+
+# +LATEX_HEADER: \renewcommand{\section}[1]{{\Large\makebox[3cm][l]{\rule{3cm}{0.4pt}}{\jost\textbf{#1}}\hrulefill\\[6pt]}}
+# +LATEX_HEADER: \renewcommand{\subsection}[3]{\makebox[3cm][r]{#1~~~~}{\jost\large\textbf{#2}} --- #3\\}
+
+# Beautiful fonts ONLY
+#+LATEX_HEADER: \usepackage{fontspec}
+# Regular font. Uncomment the options when compiling within MS Windows.
+#+LATEX_HEADER: \setmainfont{Public Sans}
+# #+LATEX_HEADER:  [Path          = C:/Users/blend/AppData/Roaming/.emacs.d/fonts/,
+# #+LATEX_HEADER:   Extension      = .ttf         ,
+# #+LATEX_HEADER:   UprightFont    = *-regular    ,
+# #+LATEX_HEADER:   BoldFont       = *-bold       ,
+# #+LATEX_HEADER:   ItalicFont     = *-italic     ,
+# #+LATEX_HEADER:   BoldItalicFont = *-bolditalic ,]
+
+# Monodpspaced font. Uncomment the options when compiling within MS Windows.
+#+LATEX_HEADER: \setmonofont{Courier Prime}
+# #+LATEX_HEADER:  [Path           = C:/Users/blend/AppData/Roaming/.emacs.d/fonts/,
+# #+LATEX_HEADER:   Extension      = .ttf         ,
+# #+LATEX_HEADER:   UprightFont    = *-regular    ,
+# #+LATEX_HEADER:   BoldFont       = *-bold       ,
+# #+LATEX_HEADER:   ItalicFont     = *-italic     ,
+# #+LATEX_HEADER:   BoldItalicFont = *-bolditalic ,]
+
+# Heading font
+#+LATEX_HEADER: \newfontfamily\jost{Jost}
+# #+LATEX_HEADER:  [Path           = C:/Users/blend/AppData/Roaming/.emacs.d/fonts/,
+# #+LATEX_HEADER:   Extension      = .ttf         ,
+# #+LATEX_HEADER:   UprightFont    = *-regular    ,
+# #+LATEX_HEADER:   BoldFont       = *-bold       ,
+# #+LATEX_HEADER:   ItalicFont     = *-italic     ,
+# #+LATEX_HEADER:   BoldItalicFont = *-bolditalic ,]
+
+# Page layout
+#+LATEX_HEADER:       \usepackage{enumitem}
+#+LATEX_HEADER_EXTRA: \setlist{before     = \vspace{-4pt} ,%
+#+LATEX_HEADER_EXTRA:          after      = \vspace{-2pt} ,%
+#+LATEX_HEADER_EXTRA:          leftmargin = 3.1cm         ,%
+#+LATEX_HEADER_EXTRA:          noitemsep                  ,}
+
+#+begin_center
+\Huge \jost *Marius Peter*
+
+\normalsize Los Angeles, CA
+
+[[mailto:mpeter@ucla.edu][=mpeter@ucla.edu=]] |
+[[https:t.me/Blendoit][=t.me/Blendoit=]]
+
+#+end_center
+
+* Education
+
+** {2014--2019}{B.S. in Aerospace Engineering}{University of California, Los Angeles}
+
+- Technical breadth in Technology \& Management
+- Electives: biomechanics, RFID and its application in manufacturing
+  \& supply chain
+- PID Controller Design \textbullet\ Fluid Mechanics \textbullet\
+  Thermodynamics \textbullet\ Aircraft Propulsion \textbullet\ %
+  Thermodynamics \textbullet~ % Thermodynamics \textbullet~
+
+* Work
+
+** {Nov. 2019--Pres.}{Systems Test Engineer}{Safran Passenger Solutions, Los Angeles}
+
+- Created the initial proposal for a novel water system on a
+  supersonic business jet
+- Autonomously designed and constructed a test rig for a water \&
+  waste system
+- Supported the Predictive Maintenance program for highly stressed
+  rotary equipment (vacuum generators\ldots)
+
+** {Sep.--Dec. 2017}{Assistant Business Analyst}{Cosmo Tech, Lyon}
+
+- Cosmo Tech publishes a Decision Support Software for complex systems
+  (road networks, energy grids)
+- Created \& presented a proof of concept for Airbus' \textit{digital
+  continuity} strategy using principles of Model-Based Systems
+  Engineering
+- Secured initial funding from Airbus for a bespoke software solution
+  for \textit{Shop Floor Control} and \textit{Final Assembly Line}
+  management
+
+** {June--July 2015}{Assistant Electronics Engineer}{CERN, Geneva}
+
+- Learned HDL, LabVIEW and core concepts of hardware programming and
+  DAQ
+- Upgraded FPGA data acquisition systems from CLIs to GUIs (embedded
+  ARM Linux)
+
+* Projects
+
+** {Apr.--June 2019}{Design-Build-Launch}{UCLA Senior Capstone}
+
+- Competition: design, manufacturing, testing \& analysis of a model
+  rocket
+- Lead the manufacturing of our rocket: mill \& lathe, 3D printing,
+  fiberglass, plywood\ldots
+- We won first place on all criteria: max.\ apogee, intact payload,
+  trajectory prediction\ldots
+
+** {Apr. 2019--Pres.}{Aircraft Studio}{Python \url{www.github.com/Blendoit/Aircraft_Studio}}
+- Broadened the scope of a program written for UCLA's aircraft design
+  course
+- Initial goal: design FAR 23 compliant NACA airfoils and optimize for
+  weight using a Monte Carlo simulation, then a genetic algorithm
+- Ultimate goal: develop an aircraft creation suite designed for
+  non-technical persons
+
+** {2012--Pres.}{3D Design/CAD}{Solidworks/Blender \url{www.deviantart.com/faquinou}}
+- 7 years experience in geometry modeling, texturing, rendering \&
+  visual FX
+
+* Skills
+
+\begin{minipage}[t]{0.32\linewidth}
+  {\large \jost\textbf{Computer Science}}
+  \begin{itemize}[leftmargin=*]
+  \item Microsoft Suite \& \LaTeX\
+  \item Languages: Verilog, MATLAB, Python, Tcl/Tk
+  \item CAD: SOLIDWORKS, Blender
+  \end{itemize}
+\end{minipage}
+~%
+\begin{minipage}[t]{0.32\linewidth}
+  {\large \jost\textbf{Systems \& Industrial}}
+  \begin{itemize}[leftmargin=*]
+  \item UML, SysML, BPMN
+  \item AnyLogic, SIMPROCESS, MEGA HOPEX
+  \item LabVIEW
+  \end{itemize}
+\end{minipage}
+~%
+\begin{minipage}[t]{0.32\linewidth}
+  {\large \jost\textbf{Languages}}
+  \begin{itemize}[leftmargin=*]
+  \item Native: French, English
+  \item Proficient: German
+  \item Intermediate: Chinese (Mandarin)
+  \end{itemize}
+\end{minipage}
+
+\end{document}

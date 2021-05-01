@@ -1,8 +1,7 @@
+%% -*- mode: LaTeX; -*-
+
 \documentclass[10pt]{article}
-\usepackage[left = 2.4cm,
-           right = 2.4cm,
-             top = 2.2cm,
-          bottom = 2.2cm,]{geometry}
+\usepackage[left=2.4cm,right=2.4cm,top=2.2cm,bottom=2.2cm]{geometry}
 \usepackage[english]{babel}     % English typographical conventions
 \usepackage{enumitem}           % Customize list items
 \usepackage{titlesec}           % Customize section spacing
@@ -12,7 +11,7 @@
 %% Beautiful fonts ONLY
 \usepackage{fontspec}
 %% Regular font
-\setmainfont{Public Sans}
+\setmainfont[Scale=0.9]{Public Sans}
 %% [Path           = C:/Users/blend/AppData/Roaming/.emacs.d/fonts/,
 %%  Extension      = .ttf         ,
 %%  UprightFont    = *-regular    ,
@@ -31,6 +30,8 @@
 
 %% Heading font
 \newfontfamily\jost{Jost}
+%% Slightly lighter weight, for \cventry
+\newfontfamily{\josts}[UprightFont={* Semi}]{Jost}
 %% [Path           = C:/Users/blend/AppData/Roaming/.emacs.d/fonts/,
 %%  Extension      = .ttf         ,
 %%  UprightFont    = *-regular    ,
@@ -39,31 +40,31 @@
 %%  BoldItalicFont = *-bolditalic ,]
 
 %% Page layout
-\setlist{before     = \vspace{-4pt} ,
-         after      = \vspace{-2pt} ,
-         leftmargin = 3.1cm         ,
-         noitemsep                  ,}
+\setlist{before=\vspace{-4pt},after=\vspace{-2pt},leftmargin=3.1cm,noitemsep}
 \pagenumbering{gobble}
 
 %% Sections & entries
-\newcommand{\cvsec}[1]{{\Large\makebox[3cm][l]{\rule{3cm}{0.4pt}}{\jost\textbf{#1}}\hrulefill\\[6pt]}}
-\newcommand{\cventry}[3]{\makebox[3cm][r]{#1~~~~}{\jost\large\textbf{#2}} --- #3\\}
+\newcommand{\cvsec}[1]{{\Large\makebox[3cm][l]{\rule{3cm}{0pt}}{\jost\textbf{#1}}\\[6pt]}}
+\newcommand{\cventry}[3]{\makebox[3cm][r]{#1~~~~}{\josts\large #2} --- #3\\}
 
 \begin{document}
 
 \begin{center}
-  \Huge \jost\textbf{Marius Peter}\\[0.4em]
-  \normalsize Los Angeles, CA\\
-  \texttt{\href{mailto:mpeter@ucla.edu}{mpeter@ucla.edu} | \href{https://www.t.me/Blendoit}{t.me/Blendoit}}\\
+  \Huge \jost\textbf{Marius Peter}\\[0.6em]
+  \normalsize Los Angeles, CA\\[0.6em]
+  \texttt{\href{mailto:mpeter@ucla.edu}{mpeter@ucla.edu}
+        | \href{https://www.t.me/Marius\_Peter}{t.me/Marius\_Peter}}\\
 \end{center}
 \vfill
 
 \cvsec{Education}
 
-\cventry{2014--2019}{B.S. in Aerospace Engineering}{University of California, Los Angeles}
+\cventry{2014--2019}{B.S. in Aerospace Engineering}{University of
+  California, Los Angeles}
 \begin{itemize}
 \item Technical breadth in Technology \& Management
-\item Electives: biomechanics, RFID and its application in manufacturing \& supply chain
+\item Electives: biomechanics, RFID and its application in
+  manufacturing \& supply chain
 \item PID Controller Design \textbullet\
   Fluid Mechanics \textbullet\
   Thermodynamics \textbullet\
@@ -74,20 +75,18 @@
 
 \cvsec{Work}
 
-\cventry{Nov. 2019--Pres.}{Systems Test Engineer}{Safran Passenger Solutions, Los Angeles}
+\cventry{Nov. 2019--Pres.}{Systems Test Engineer}{Safran Cabins, Los
+  Angeles}
 \begin{itemize}
-\item Created the initial proposal for a novel water system on a
+\item Built a 1:1 scale test rig for a complete water \& waste system
+\item Created the initial proposal for a novel water system for a
   supersonic business jet
-\item Autonomously designed and constructed a test rig for a water \&
-  waste system
 \item Supported the Predictive Maintenance program for highly stressed
-  rotary equipment (vacuum generators\ldots)
+  rotary equipment (vacuum generators, air compressors\ldots)
 \end{itemize}
 
 \cventry{Sep.--Dec. 2017}{Assistant Business Analyst}{Cosmo Tech, Lyon}
 \begin{itemize}
-\item Cosmo Tech publishes a Decision Support Software for complex
-  systems (road networks, energy grids)
 \item Created \& presented a proof of concept for Airbus'
   \textit{digital continuity} strategy using principles of Model-Based
   Systems Engineering
@@ -108,14 +107,16 @@
 
 \cventry{Apr.--June 2019}{Design-Build-Launch}{UCLA Senior Capstone}
 \begin{itemize}
-\item Competition: design, manufacturing, testing \& analysis of a model rocket
+\item Competition: design, manufacturing, testing \& flight analysis
+  of a model rocket
 \item Lead the manufacturing of our rocket: mill \& lathe, 3D
   printing, fiberglass, plywood\ldots
-\item We won first place on all criteria: max.\ apogee, intact
-  payload, trajectory prediction\ldots
+\item First place for all criteria: max.\ apogee, intact payload,
+  trajectory prediction\ldots
 \end{itemize}
 
-\cventry{Apr. 2019--Pres.}{Aircraft Studio}{Python \url{www.github.com/Blendoit/Aircraft_Studio}}
+\cventry{Apr. 2019--Pres.}{Aircraft Studio}{Python
+  \url{www.github.com/Blendoit/Aircraft_Studio}}
 \begin{itemize}
 \item Broadened the scope of a program written for UCLA's aircraft
   design course
@@ -136,8 +137,8 @@
   {\large \jost\textbf{Computer Science}}
   \begin{itemize}[leftmargin=*]
   \item Microsoft Suite \& \LaTeX\
-  \item Languages: Verilog, MATLAB, Python, Tcl/Tk
-  \item CAD: SOLIDWORKS, Blender
+  \item Verilog, MATLAB, Python, Lisp
+  \item SOLIDWORKS, Blender 3D
   \end{itemize}
 \end{minipage}
 ~%
@@ -145,8 +146,8 @@
   {\large \jost\textbf{Systems \& Industrial}}
   \begin{itemize}[leftmargin=*]
   \item UML, SysML, BPMN
-  \item AnyLogic, SIMPROCESS, MEGA HOPEX
-  \item LabVIEW
+  \item AnyLogic, SIMPROCESS
+  \item NI LabVIEW, other DAQ
   \end{itemize}
 \end{minipage}
 ~%
@@ -155,7 +156,7 @@
   \begin{itemize}[leftmargin=*]
   \item Native: French, English
   \item Proficient: German
-  \item Intermediate: Chinese (Mandarin)
+  \item Intermediate: Chinese
   \end{itemize}
 \end{minipage}
 

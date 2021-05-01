@@ -4,7 +4,7 @@
 #+AUTHOR: Marius Peter
 #+DATE: <2021-01-25 Mon>
 
-#+OPTIONS: title:nil toc:nil tags:nil
+#+OPTIONS: title:nil toc:nil tags:nil num:nil
 
 # Ensure room for header and footer
 #+LATEX_HEADER: \usepackage{geometry}[
@@ -46,11 +46,18 @@
 # #+LATEX_HEADER:   BoldItalicFont = *-bolditalic ,]
 
 # Page layout
-#+LATEX_HEADER:       \usepackage{enumitem}
-#+LATEX_HEADER_EXTRA: \setlist{before     = \vspace{-4pt} ,%
-#+LATEX_HEADER_EXTRA:          after      = \vspace{-2pt} ,%
-#+LATEX_HEADER_EXTRA:          leftmargin = 3.1cm         ,%
-#+LATEX_HEADER_EXTRA:          noitemsep                  ,}
+# #+LATEX_HEADER:       \usepackage{enumitem}
+# #+LATEX_HEADER_EXTRA: \setlist{before     = \vspace{-4pt} ,%
+# #+LATEX_HEADER_EXTRA:          after      = \vspace{-2pt} ,%
+# #+LATEX_HEADER_EXTRA:          leftmargin = 3.1cm         ,%
+# #+LATEX_HEADER_EXTRA:          noitemsep                  ,}
+
+#+LATEX_HEADER: \usepackage{titlesec}
+#+LATEX_HEADER: \titleformat{\section}{\jost\bfseries}
+# #+LATEX_HEADER: \titlespacing{\section}{0pt}{12pt}{6pt}
+
+#+EXCLUDE_TAGS: personal
+#+SELECT_TAGS: work
 
 #+begin_center
 \Huge \jost *Marius Peter*

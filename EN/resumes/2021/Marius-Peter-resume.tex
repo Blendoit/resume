@@ -1,0 +1,149 @@
+%% -*- mode: LaTeX; -*-
+
+\documentclass[10pt]{article}
+\usepackage[left=2.4cm,right=2.4cm,top=2.2cm,bottom=2.2cm]{geometry}
+\usepackage[english]{babel}     % English typographical conventions
+\usepackage{enumitem}           % Customize list items
+\usepackage{titlesec}           % Customize section spacing
+\usepackage[document]{ragged2e} % Page layout
+\usepackage{hyperref}           % Hyperlinks!
+
+%% Beautiful fonts ONLY
+\usepackage{fontspec}
+%% Regular font
+\setmainfont{Crimson Pro}
+
+%% Monospaced font
+\setmonofont{Courier Prime}
+
+%% Heading font
+\newfontfamily\publicsans{Public Sans}
+%% Slightly lighter weight, for \cventry
+\newfontfamily{\josts}[UprightFont={* Semi}]{Jost}
+
+%% Page layout
+\setlist{before=\vspace{-4pt},after=\vspace{-2pt},leftmargin=3.1cm,noitemsep}
+\pagenumbering{gobble}
+
+%% Sections & entries
+\newcommand{\cvsec}[1]{{\makebox[3cm][l]{\rule{3cm}{0pt}}{\publicsans\bfseries #1}\\[6pt]}}
+\newcommand{\cventry}[3]{\makebox[3cm][r]{#1~~~~}{\publicsans\bfseries #2} --- #3\\}
+
+\begin{document}
+
+\begin{center}
+  \Huge \publicsans\textbf{Marius Peter}\\[0.6em]
+  \normalsize Los Angeles, CA\\[0.6em]
+  \texttt{\href{mailto:mpeter@ucla.edu}{mpeter@ucla.edu}
+        | \href{https://www.t.me/Marius\_Peter}{t.me/Marius\_Peter}}\\
+\end{center}
+\vfill
+
+\cvsec{Education}
+
+\cventry{2014--2019}{B.S. in Aerospace Engineering}{University of
+  California, Los Angeles}
+\begin{itemize}
+\item Technical breadth in Technology \& Management
+\item Electives: biomechanics, RFID and its application in
+  manufacturing \& supply chain
+\item PID Controller Design \textbullet\
+  Fluid Mechanics \textbullet\
+  Thermodynamics \textbullet\
+  Aircraft Propulsion \textbullet\
+  % Thermodynamics \textbullet~
+  % Thermodynamics \textbullet~
+\end{itemize}
+
+\cvsec{Work}
+
+\cventry{Nov. 2019--Pres.}{Systems Test Engineer}{Safran Cabins, Los
+  Angeles}
+\begin{itemize}
+\item Built a 1:1 scale test rig for a complete water \& waste system
+\item Created the initial proposal for a novel water system for a
+  supersonic business jet
+\item Supported the Predictive Maintenance program for highly stressed
+  rotary equipment (vacuum generators, air compressors\ldots)
+\end{itemize}
+
+\cventry{Sep.--Dec. 2017}{Assistant Business Analyst}{Cosmo Tech, Lyon}
+\begin{itemize}
+\item Created \& presented a proof of concept for Airbus'
+  \textit{digital continuity} strategy using principles of Model-Based
+  Systems Engineering
+\item Secured initial funding from Airbus for a bespoke software
+  solution for \textit{Shop Floor Control} and \textit{Final Assembly
+    Line} management
+\end{itemize}
+
+\cventry{June--July 2015}{Assistant Electronics Engineer}{CERN, Geneva}
+\begin{itemize}
+\item Learned HDL, LabVIEW and core concepts of hardware programming
+  and DAQ
+\item Upgraded FPGA data acquisition systems from CLIs to GUIs
+  (embedded ARM Linux)
+\end{itemize}
+
+\cvsec{Projects}
+
+\cventry{Apr.--June 2019}{Design-Build-Launch}{UCLA Senior Capstone}
+\begin{itemize}
+\item Competition: design, manufacturing, testing \& flight analysis
+  of a model rocket
+\item Lead the manufacturing of our rocket: mill \& lathe, 3D
+  printing, fiberglass, plywood\ldots
+\item First place for all criteria: max.\ apogee, intact payload,
+  trajectory prediction\ldots
+\end{itemize}
+
+\cventry{Apr. 2019--Pres.}{Aircraft Studio}{Python
+  \url{www.github.com/Blendoit/Aircraft_Studio}}
+\begin{itemize}
+\item Broadened the scope of a program written for UCLA's aircraft
+  design course
+\item Initial goal: design FAR 23 compliant NACA airfoils and optimize
+  for weight using a Monte Carlo simulation, then a genetic algorithm
+\item Ultimate goal: develop an aircraft creation suite designed for
+  non-technical persons
+\end{itemize}
+
+\cventry{2012--Pres.}{3D Design/CAD}{Solidworks/Blender \url{www.deviantart.com/faquinou}}
+\begin{itemize}
+\item 7 years experience in geometry modeling, texturing, rendering \&
+  visual FX
+\end{itemize}
+
+\cvsec{Skills}
+\begin{minipage}[t]{0.32\linewidth}
+  {\large \publicsans\textbf{Computer Science}}
+  \begin{itemize}[leftmargin=*]
+  \item Microsoft Suite \& \LaTeX\
+  \item Verilog, MATLAB, Python, Lisp
+  \item SOLIDWORKS, Blender 3D
+  \end{itemize}
+\end{minipage}
+~%
+\begin{minipage}[t]{0.32\linewidth}
+  {\large \publicsans\textbf{Systems \& Industrial}}
+  \begin{itemize}[leftmargin=*]
+  \item UML, SysML, BPMN
+  \item AnyLogic, SIMPROCESS
+  \item NI LabVIEW, other DAQ
+  \end{itemize}
+\end{minipage}
+~%
+\begin{minipage}[t]{0.32\linewidth}
+  {\large \publicsans\textbf{Languages}}
+  \begin{itemize}[leftmargin=*]
+  \item Native: French, English
+  \item Proficient: German
+  \item Intermediate: Chinese
+  \end{itemize}
+\end{minipage}
+
+\end{document}
+
+% Local Variables:
+% TeX-engine: luatex
+% End:

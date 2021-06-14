@@ -1,30 +1,55 @@
-.de cvs
-.  sz 12
-.  b
-   \\$1
+.ig
+resume.ms
+=========
+
+Copyright 2021 Marius Peter
+
+Command to compile:
+groff -ms -Tps resume.ms | ps2pdf - > resume-ms.pdf
 ..
-.de cve
-.  sz 11
-   \\$1 \\$2 \\$3
+.eo
+.de cvs ..
+.TS
+allbox tab(;);
+lw(1i) l.
+; \s[12]\f[B]\$1
+.TE
+...
+.ec
+.
+.eo
+.de cve ..
+.TS
+allbox tab(;);
+lw(1i) l rx.
+\$1; \f[B]\$2; \f[R]\$3
+.TE
+...
+.ec
+.
+.de BL
+.  IP \[bu] 2
 ..
-.(c
-.sz 14
-Marius Peter
-.br
+.
+.ce 100
+\s[14]\f[B] Marius Peter \s[11]\f[]
+.sp 2
+.NL
 Los Angeles, CA
-.br
-mpeter@ucla.edu | t.me/Marius_Peter
-.)c
+.sp 1
+.CW "mpeter@ucla.edu | t.me/Marius_Peter"
+.sp 1
+.ce 0
 .
 .cvs Education
 .
 .cve "2014\-2019" "B.S. in Aerospace Engineering" "University of California, Los Angeles"
-.bu
+.BL
 Technical breadth in Technology & Management
-.bu
+.BL
 Electives: biomechanics, RFID and its application in manufacturing &
 supply chain
-.bu
+.BL
 PID Controller Design
 Fluid Mechanics 
 Thermodynamics
@@ -35,67 +60,61 @@ Thermodynamics
 .cvs Work
 .
 .cve "Nov. 2019\-Pres." "Systems Test Engineer" "Safran Cabins, Los Angeles"
-.bu
+.BL
 Built a 1:1 scale test rig for a complete water & waste system
-.bu
+.BL
 Created the initial proposal for a novel water system for a supersonic
 business jet
-.bu
+.BL
 Supported the Predictive Maintenance program for highly stressed
 rotary equipment (vacuum generators, air compressors...)
 .
 .cve "Sep.\-Dec. 2017" "Assistant Business Analyst" "Cosmo Tech, Lyon"
-.bu
+.BL
 Created & presented a proof of concept for Airbus'
-.i
-digital continuity
-.r
+.I "digital continuity"
+.R
 strategy using principles of Model-Based Systems Engineering
-.bu
+.BL
 Secured initial funding from Airbus for a bespoke software solution
 for
-.i
-Shop Floor Control
-.r
-and
-.i
-Final Assembly Line
-.r
-management
+.I "Shop Floor Control"
+.R and
+.I "Final Assembly Line"
+.R management
 .
 .cve "June\-July 2015" "Assistant Electronics Engineer" "CERN, Geneva"
-.bu
+.BL
 Learned HDL, LabVIEW and core concepts of hardware programming and DAQ
-.bu
-Upgraded FPGA data acquisition systems from CLIs to GUIs (embedded ARM
-Linux)
+.BL
+Upgraded FPGA data acquisition systems from CLIs to GUIs (embedded ARM Linux)
 .
 .cvs Projects
 .
 .cve "Apr.\-June 2019" "Design-Build-Launch" "UCLA Senior Capstone"
-.bu
+.BL
 Competition: design, manufacturing, testing & flight analysis of a
 model rocket
-.bu
+.BL
 Lead the manufacturing of our rocket: mill & lathe, 3D printing,
 fiberglass, plywood...
-.bu
+.BL
 First place for all criteria: maximum apogee, intact payload, trajectory
 prediction...
 .
-.cve "Apr. 2019\-Pres. Aircraft Studio Python www.github.com/Blendoit/Aircraft_Studio"
-.bu
+.cve "Apr. 2019\-Pres." "Aircraft Studio Python" "www.github.com/Blendoit/Aircraft_Studio"
+.BL
 Broadened the scope of a program written for UCLA's aircraft design
 course
-.bu
+.BL
 Initial goal: design FAR 23 compliant NACA airfoils and optimize for
 weight using a Monte Carlo simulation, then a genetic algorithm
-.bu
+.BL
 Ultimate goal: develop an aircraft creation suite designed for
 non-technical persons
 .
 .cve "2012\-Pres." "3D Design/CAD Solidworks/Blender" "www.deviantart.com/faquinou"
-.bu
+.BL
 7 years experience in geometry modeling, texturing, rendering \&
 visual FX
 .
@@ -103,24 +122,24 @@ visual FX
 .cvs Skills
 .
 .cve "Computer Science"
-.bu
+.BL
 Microsoft Suite & LaTeX
-.bu
+.BL
 Verilog, MATLAB, Python, Lisp
-.bu
+.BL
 SOLIDWORKS, Blender 3D
 .
 .cve "Systems & Industrial"
-.bu
+.BL
 UML, SysML, BPMN
-.bu
+.BL
 AnyLogic, SIMPROCESS
-.bu
+.BL
 NI LabVIEW, other DAQ
 .cve Languages
-.bu
+.BL
 Native: French, English
-.bu
+.BL
 Proficient: German
-.bu
+.BL
 Intermediate: Chinese
